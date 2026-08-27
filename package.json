@@ -1,5 +1,5 @@
 {
-  "name": "mcp-armor",
+  "name": "@carlosfevernova/mcp-armor",
   "version": "0.1.0",
   "description": "Drop-in proxy for MCP clients — lazy-loads tool schemas (60-95% token savings), scans for SSRF and command injection, wraps arguments in Zod types. Zero runtime deps beyond zod.",
   "keywords": [

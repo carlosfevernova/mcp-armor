@@ -9,8 +9,10 @@ Drop-in proxy for MCP (Model Context Protocol) clients. Three things it does tha
 3. **Zod-first tool definitions** — write your tool once with a Zod schema, get a type-safe handler + auto-generated JSON Schema. No hand-writing schemas twice.
 
 ```bash
-npm i mcp-armor
+npm i @carlosfevernova/mcp-armor
 ```
+
+*(The unscoped `mcp-armor` name was taken by an unrelated package; this one lives in the `@carlosfevernova` scope.)*
 
 ## Why this exists
 
