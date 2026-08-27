@@ -1,0 +1,65 @@
+{
+  "name": "mcp-armor",
+  "version": "0.1.0",
+  "description": "Drop-in proxy for MCP clients — lazy-loads tool schemas (60-95% token savings), scans for SSRF and command injection, wraps arguments in Zod types. Zero runtime deps beyond zod.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "anthropic",
+    "openai",
+    "token-optimization",
+    "security",
+    "ssrf",
+    "zod",
+    "proxy"
+  ],
+  "author": "Carlos F. Vernova",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "tsup": "8.3.5",
+    "typescript": "5.6.3",
+    "vitest": "2.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosfevernova/mcp-armor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/carlosfevernova/mcp-armor/issues"
+  },
+  "homepage": "https://github.com/carlosfevernova/mcp-armor",
+  "allowScripts": {
+    "esbuild@0.24.2": true,
+    "esbuild@0.21.5": true
+  }
+}
